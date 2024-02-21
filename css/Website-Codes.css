@@ -374,7 +374,7 @@
   \*-----------------------------------*/
   
   .hero {
-    background: url("../images/hero-banner.jpg") no-repeat;
+    background: url("img/hero-banner.jpg") no-repeat;
     background-size: cover;
     background-position: top center;
     margin-top: 90px;
@@ -418,13 +418,13 @@
   \*-----------------------------------*/
   
   .section-wrapper {
-    background: url("../images/section-wrapper-bg.jpg") no-repeat;
+    background: url("img/section-wrapper-bg.jpg") no-repeat;
     background-size: cover;
     background-position: center;
   }
   
   .about {
-    background: url("../images/about-img-shadow.png") no-repeat;
+    background: url("img/about-img-shadow.png") no-repeat;
     background-size: 100%;
     background-position: center;
     padding: 120px 0 var(--section-padding);
@@ -679,7 +679,7 @@
   
   .gears-card .card-banner {
     position: relative;
-    background: url("../images/gears-card-bg.png") no-repeat;
+    background: url("img/gears-card-bg.png") no-repeat;
     background-size: contain;
     background-position: center;
     width: 100%;
@@ -801,7 +801,7 @@
   .newsletter { padding: var(--section-padding) 0 120px; }
   
   .newsletter-card {
-    background: url("../images/newsletter-bg.jpg") no-repeat;
+    background: url("img/newsletter-bg.jpg") no-repeat;
     background-size: cover;
     background-position: center;
     padding: 50px 25px;
@@ -852,7 +852,7 @@
   \*-----------------------------------*/
   
   .footer-top {
-    background: url("../images/footer-bg.jpg") no-repeat;
+    background: url("img/footer-bg.jpg") no-repeat;
     background-size: cover;
     background-position: center;
     padding: var(--section-padding) 0;
