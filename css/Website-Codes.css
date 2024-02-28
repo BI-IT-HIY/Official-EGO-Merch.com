@@ -123,6 +123,9 @@
     scroll-behavior: smooth;
   }
   
+  .body {
+    background-color: #323131;
+  }
   body { overflow-x: hidden; }
   
   body.active { overflow-y: hidden; }
@@ -191,7 +194,8 @@
   }
   
   .btn {
-    color: var(--white);
+    margin-top: 80px;
+    color: white;
     font-family: var(--ff-oswald);
     font-size: var(--fs-6);
     font-weight: var(--fw-500);
@@ -205,22 +209,41 @@
     clip-path: var(--polygon-1);
     transition: var(--transition-1);
   }
+
+  .btn:visited {
+    color: white;
+  }
   
-  .btn-primary { background: var(--orange); }
+  .btn-primary { 
+    background: var(--orange); 
+    margin-right: 100px;
+  }
   
-  .btn-primary:is(:hover, :focus) { background: var(--raisin-black-1); }
+  .btn-primary:is(:hover, :focus) { 
+    background: var(--raisin-black-1); 
+    color: white;
+  }
   
   .btn-secondary {
-    background: var(--white);
+    background: white;
     color: var(--orange);
   }
   
   .btn-secondary:is(:hover, :focus) {
     background: var(--raisin-black-1);
-    color: var(--white);
+    color: white;
   }
   
-  .btn-link:is(:hover, :focus) { color: var(--orange); }
+  .btn-link:is(:hover, :focus) { 
+    background: var(--raisin-black-1);
+    color: white;
+  }
+
+  .btn-link { 
+    background: var(--orange);
+    margin-left: 100px;
+    color: white;
+  }
   
   .has-scrollbar::-webkit-scrollbar { height: 6px; }
   
@@ -373,32 +396,41 @@
     #HERO
   \*-----------------------------------*/
   
-  .hero {
-    background: url("img/hero-banner.jpg") no-repeat;
-    background-size: cover;
-    background-position: top center;
-    margin-top: 90px;
-    padding: var(--section-padding) 0;
-    height: 100vh;
-    max-height: 1000px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
+  /* Stile für .hero-Klasse */
+.hero {
+  position: relative;
+  background-size: cover;
+  background-position: top center;
+  padding: var(--section-padding) 0;
+  height: 100vh;
+  max-height: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+/* Stile für .hero-text-Klasse */
+.hero-text {
+  position: absolute; /* Die Positionierung relativ zu .hero */
+  top: 50%; /* Vertikale Mitte */
+  left: 50%; /* Horizontale Mitte */
+  transform: translate(-50%, -50%); /* Zentrierte Position */
+  padding: 20px; /* Innenabstand */
+}
+
+/* Zusätzliche Stile für .hero-subtitle-Klasse */
+.hero-subtitle {
+  color: var(--white);
+  font-family: var(--ff-oswald);
+  font-size: var(--fs-2);
+  font-weight: var(--fw-500);
+  text-transform: uppercase;
+  letter-spacing: 12px;
+  text-shadow: 0 7px hsla(0, 0%, 0%, 0.4);
+  margin-bottom: 15px;
+}
   
-  .hero-subtitle {
-    color: var(--white);
-    font-family: var(--ff-oswald);
-    font-size: var(--fs-7);
-    font-weight: var(--fw-500);
-    text-transform: uppercase;
-    letter-spacing: 12px;
-    text-shadow: 0 7px hsla(0, 0%, 0%, 0.4);
-    margin-bottom: 15px;
-  }
   
-  .hero-title { margin-bottom: 10px; }
   
   .btn-group {
     display: flex;
@@ -407,7 +439,7 @@
     align-items: center;
   }
   
-  .hero .btn-primary ion-icon { font-size: 25px; }
+  
   
   
   
@@ -803,22 +835,19 @@
   .newsletter-card {
     background: url("img/newsletter-bg.jpg") no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center center;
     padding: 50px 25px;
     border-radius: 12px;
     text-align: center;
   }
   
   .newsletter-content { margin-bottom: 30px; }
-  
-  .newsletter-img {
-    width: max-content;
-    margin-inline: auto;
-    margin-bottom: 10px;
+    
+  .newsletter-title { 
+    background-image: url(/img/newsletter-bg.jpg);
+    font-size: var(--fs-3); 
+    color:white;
   }
-  
-  .newsletter-title { font-size: var(--fs-3); }
-  
   .newsletter .input-field {
     background: hsla(0, 0%, 0%, 0.2);
     color: var(--white);

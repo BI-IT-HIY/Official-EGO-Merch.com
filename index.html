@@ -27,7 +27,7 @@
     rel="stylesheet">
 </head>
 
-<body id="top">
+<body class="body" id="top">
 
   <!-- 
     - #HEADER
@@ -155,28 +155,31 @@
         - #HERO
       -->
 
-      <section class="hero" id="hero">
-        <div class="container">
-
-          <p class="hero-subtitle">The Season 8</p>
-
-          <h1 class="h1 hero-title">Steam</h1>
-
+      
+      <div class="hero">
+        <a href="#"><img src="img/hero-banner.jpg" alt="hero-banner"></a>
+        <div class="hero-text">
+            <p class="hero-subtitle"> The Season 1 </p>
+        </div>
+      </div>
           <div class="btn-group">
 
             <button class="btn btn-primary">
-              <span>Watch live</span>
-
+              <a href="https://www.twitch.tv/iamtheepicmaster">
+                <span>Watch live</span>
+              </a>
               <ion-icon name="play-circle"></ion-icon>
             </button>
 
-            <button class="btn btn-link">Dream making</button>
-
+            <button class="btn btn-link">
+              <a href="https://linktr.ee/letschill.2k22">
+                <span>Dream making</span>
+              </a>
+              <ion-icon name="play-circle"></ion-icon>
+            </button>
           </div>
 
-        </div>
-      </section>
-
+      
 
 
 
@@ -651,35 +654,22 @@
 
 
 
-
-
         <!-- 
           - #NEWSLETTER
         -->
 
-        <section class="newsletter">
-          <div class="container">
-
-            <div class="newsletter-card">
-
-              <div class="newsletter-content">
-                <figure class="newsletter-img">
-                  <img src="img/newsletter-bg.jpg" alt="Newsletter image">
-                </figure>
-
-                <h2 class="h2 newsletter-title">Subscribe to our newsletter</h2>
-              </div>
-
+        <section class="newsletter">    
+          <div class="newsletter-card">
+            <a href="/img/newsletter-bg.jpg" class="newsletter">
+              <h2 class="newsletter-title">Subscribe to our newsletter</h2>
+            </a>
               <form action="" class="newsletter-form">
-                <input type="email" name="email" required placeholder="Your Email Address" class="input-field">
-
-                <button type="submit" class="btn btn-secondary">Subscribe</button>
+                  <input type="email" name="email" required placeholder="Your Email Address" class="input-field">
+      
+                  <button type="submit" class="btn btn-secondary">Subscribe</button>
               </form>
-
-            </div>
-
           </div>
-        </section>
+      </section>
 
       </div>
 
