@@ -125,21 +125,25 @@
   
   .body {
     background-color: #000000;
+    animation: noScroll 0s 2s both;
   }
   body { overflow-x: hidden; }
   
   body.active { overflow-y: hidden; }
   
-  ::-webkit-scrollbar { width: 8px; }
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
   
-  ::-webkit-scrollbar-track { background: var(--raisin-black-2); }
+  ::-webkit-scrollbar-track {
+    background-color: var(--eerie-black);
+  }
   
   ::-webkit-scrollbar-thumb {
     background: var(--orange);
     border-radius: 10px;
   }
-  
-  
+
   
   
   
@@ -194,7 +198,7 @@
   }
   
   .btn {
-    margin-top: 80px;
+    margin: 20px auto;
     color: white;
     font-family: var(--ff-oswald);
     font-size: var(--fs-6);
@@ -216,7 +220,6 @@
   
   .btn-primary { 
     background: var(--orange); 
-    margin-right: 100px;
   }
   
   .btn-primary:is(:hover, :focus) { 
@@ -241,7 +244,6 @@
 
   .btn-link { 
     background: var(--orange);
-    margin-left: 100px;
     color: white;
   }
   
@@ -283,7 +285,7 @@
   \*-----------------------------------*/
   
   .header {
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
@@ -402,11 +404,13 @@
   
   /* Stile für .hero-Klasse */
 .hero {
-  position: relative;
+  position: sticky;
   background-size: cover;
   background-position: top center;
-  padding: var(--section-padding) 0;
+  padding: 0;
+  margin: 0 0 var(--section-padding);
   height: 100vh;
+  width: 100%;
   max-height: 1000px;
   display: flex;
   justify-content: center;
@@ -441,6 +445,9 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    column-gap: 40px;
+    padding: 0 40px;
+    margin: 20px 0;
   }
   
   
@@ -450,7 +457,7 @@
   
   
   /*-----------------------------------*\
-    #ABOUT
+    #offer
   \*-----------------------------------*/
   
   .section-wrapper {
@@ -459,20 +466,20 @@
     background-position: center;
   }
   
-  .about {
-    background: url("img/about-img-shadow.png") no-repeat;
+  .offer {
+    background: url("img/offer-img-shadow.png") no-repeat;
     background-size: 100%;
     background-position: center;
     padding: 120px 0 var(--section-padding);
   }
   
-  .about-banner { margin-bottom: 40px; }
+  .offer-banner { margin-bottom: 40px; }
   
-  .about-img { width: 100%; }
+  .offer-img { width: 100%; }
   
   .character { display: none; }
   
-  .about-content {
+  .offer-content {
     background: var(--raisin-black-1);
     color: var(--white);
     padding: 40px 20px;
@@ -480,7 +487,7 @@
     box-shadow: 0 2px 4px hsla(0, 0%, 0%, 0.2);
   }
   
-  .about-subtitle {
+  .offer-subtitle {
     color: var(--orange);
     font-family: var(--ff-oswald);
     font-size: var(--fs-8);
@@ -489,7 +496,7 @@
     margin-bottom: 15px;
   }
   
-  .about-title {
+  .offer-title {
     font-family: var(--ff-oswald);
     font-size: var(--fs-2);
     line-height: 1.2;
@@ -497,26 +504,26 @@
     margin-bottom: 20px;
   }
   
-  .about-title strong { color: var(--orange); }
+  .offer-title strong { color: var(--orange); }
   
-  .about-text,
-  .about-bottom-text {
+  .offer-text,
+  .offer-bottom-text {
     color: var(--light-gray);
     font-size: var(--fs-9);
     line-height: 1.8;
     letter-spacing: 0.5px;
   }
   
-  .about-text { margin-bottom: 20px; }
+  .offer-text { margin-bottom: 20px; }
   
-  .about-bottom-text {
+  .offer-bottom-text {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     gap: 8px;
   }
   
-  .about-bottom-text ion-icon {
+  .offer-bottom-text ion-icon {
     color: var(--orange);
     font-size: 25px;
     --ionicon-stroke-width: 45px;
@@ -536,7 +543,9 @@
     text-align: center;
   }
   
-  .tournament-content { margin-bottom: 50px; }
+  .tournament-content {
+    margin-bottom: 50px;
+  }
   
   .tournament-subtitle {
     color: var(--orange);
@@ -834,8 +843,6 @@
     #NEWSLETTER
   \*-----------------------------------*/
   
-  .newsletter { padding: var(--section-padding) 0 120px; }
-  
   .newsletter-card {
     background: url("img/newsletter-bg.jpg") no-repeat;
     background-size: cover;
@@ -916,6 +923,7 @@
   
   .footer-menu-list {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -1140,10 +1148,10 @@
   
   
     /**
-     * ABOUT
+     * offer
      */
   
-    .about-banner {
+    .offer-banner {
       position: relative;
       max-width: 410px;
       margin-inline: auto;
@@ -1159,7 +1167,7 @@
       z-index: -1;
     }
   
-    .about-content { padding: 60px 40px; }
+    .offer-content { padding: 60px 40px; }
   
   
   
@@ -1259,10 +1267,10 @@
   
   
     /**
-     * ABOUT
+     * offer
      */
   
-    .about-banner { max-width: 430px; }
+    .offer-banner { max-width: 430px; }
   
     .character {
       display: block;
@@ -1307,7 +1315,7 @@
      * NEWSLETTER
      */
   
-    .newsletter-card { text-align: left; }
+    /*.newsletter-card { text-align: left; }*/
   
     .newsletter-content {
       display: flex;
@@ -1321,9 +1329,15 @@
     .newsletter-img { margin-inline: 0; }
   
     .newsletter-form {
+      display: flex;
       position: relative;
       max-width: 530px;
       margin-inline: auto;
+      column-gap: 50px;
+    }
+
+    .newsletter-form button {
+      margin: 0;
     }
   
     .newsletter-form::after {
@@ -1364,7 +1378,6 @@
     }
   
     .footer-menu-list {
-      max-width: 50%;
       justify-content: flex-start;
       column-gap: 16px;
       margin-bottom: 0;
@@ -1384,10 +1397,54 @@
   
   }
   
-  
-  
-  
-  
+  .banner {
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/Bild0-0.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  #intro {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 100;
+    animation: fadeIn 1s 6s ease-in-out both;
+  }
+
+  #intro img {
+    width: 100%;
+  }
+
+  @keyframes noScroll {
+    from {
+      overflow-y: hidden;
+    }
+
+    to {
+      overflow-y: scroll;
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      filter: opacity(1);
+      z-index: 100;
+      display: flex;
+    }
+
+    to {
+      filter: opacity(0);
+      z-index: 0;
+      display: none;
+    }
+  }
+
   /**
    * responsive larger than 1024px
    */
@@ -1417,8 +1474,6 @@
     .container { max-width: 1000px; }
   
     .has-scrollbar::-webkit-scrollbar-button { width: 200px; }
-  
-  
   
     /**
      * HEADER 
@@ -1548,12 +1603,12 @@
   
   
     /**
-     * ABOUT
+     * offer
      */
   
-    .about { padding-top: 200px; }
+    .offer { padding-top: 200px; }
   
-    .about-content {
+    .offer-content {
       max-width: 700px;
       margin-inline: auto;
     }
@@ -1620,13 +1675,11 @@
      * NEWSLETTER
      */
   
-    .newsletter { padding-bottom: 200px; }
   
     .newsletter-card {
-      display: flex;
+      flex-direction: column;
       justify-content: space-between;
       align-items: center;
-      gap: 50px;
       padding: 45px 50px;
     }
   
@@ -1664,10 +1717,14 @@
       margin-right: 50px;
     }
   
-    .footer-menu-wrapper { gap: 50px; }
+    .footer-menu-wrapper {
+      column-gap: 50px;
+      width: 100%;
+    }
   
     .footer-menu-list {
       flex-grow: 1;
+      width: 100%;
       max-width: unset;
     }
   
@@ -1719,20 +1776,19 @@
      * HERO
      */
   
-    .hero { margin-top: 110px; }
   
   
   
     /**
-     * ABOUT
+     * offer
      */
   
-    .about {
+    .offer {
       background-size: 55%;
       background-position: 90% center;
     }
   
-    .about .container {
+    .offer .container {
       display: flex;
       flex-direction: row-reverse;
       justify-content: space-between;
@@ -1741,7 +1797,7 @@
       padding-right: 110px;
     }
   
-    .about-banner {
+    .offer-banner {
       margin-inline: 0;
       margin-bottom: 0;
     }
@@ -1751,7 +1807,7 @@
       top: 70px;
     }
   
-    .about-content {
+    .offer-content {
       max-width: 600px;
       margin-inline: 0;
     }
@@ -1783,13 +1839,19 @@
      * NEWSLETTER
      */
   
-    .newsletter-card { padding-block: 60px; }
+    .newsletter-card {
+      display: flex;
+      flex-direction: column;
+      padding-block: 60px;
+      row-gap: 20px;
+    }
   
     .newsletter-content { max-width: 500px; }
   
     .newsletter-title { --fs-3: 40px; }
   
     .newsletter-form {
+      width: 100%;
       max-width: 450px;
       margin-inline: 0;
     }
