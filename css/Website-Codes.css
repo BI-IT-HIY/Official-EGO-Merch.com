@@ -389,6 +389,10 @@
   }
   
   
+  .background.active 
+    body {
+      background-color: black;
+  }
   
   
   
