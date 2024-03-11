@@ -1409,11 +1409,7 @@ body.active {
 #intro {
   position: fixed;
   top: 0%;
-<<<<<<< HEAD
   left: -8%;
-=======
-  left: -9%;
->>>>>>> ce115e7e1d25f2fce0f0a14d6630e3c93a30645b
   width: 100%;
   height: 100%;
   background-color: black;
