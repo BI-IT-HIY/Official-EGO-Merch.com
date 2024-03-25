@@ -1915,7 +1915,11 @@ body.active {
   .team-list {
     gap: 20px;
   }
+  /**
+     * ABOUT
+     */
 
+     
   /**
      * GEARS
      */
