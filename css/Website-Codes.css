@@ -1127,10 +1127,10 @@ body.active {
   \*-----------------------------------*/
 
 /**
-   * responsive larger than 374px
+   * responsive larger than px
    */
 
-   @media (min-width: 374px) {
+   @media (min-width: 420px) {
     /**
        * CUSTOM PROPERTY
        */
@@ -1859,7 +1859,7 @@ body.active {
      */
 
 
-  /*setting for gallery are found in .cointainer .card*/
+  /*setting for gallery are found in .container .card*/
 
   /* .gallery-list {
     gap: 30px;
@@ -2123,8 +2123,8 @@ body.active {
   }
 
   .card-time-wrapper {
-    top: 3.5%;
-    right: 7%;
+    top: 10%;
+    right: -8%;
   }
 
   /**
@@ -2181,8 +2181,8 @@ body.active {
 
   .container .box {
     position: relative;
-    width: 1100px;
-    height: 710px;
+    width: 900px;
+    height: 700px;
     margin: 30px;
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
     border-radius: 15px;
