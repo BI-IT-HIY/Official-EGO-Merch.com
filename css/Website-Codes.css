@@ -765,11 +765,11 @@ body.active {
 }
 
 .gears .card-banner a {
-  width: 50%;
+  width: 100%;
 }
 
 .gears .card-banner img {
-  width: 100%;
+  width: 45%;
   margin-inline: auto;
 }
 
