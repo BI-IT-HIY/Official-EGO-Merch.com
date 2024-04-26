@@ -765,12 +765,17 @@ body.active {
 }
 
 .gears .card-banner a {
-  width: 100%;
+  width: 50%;
 }
 
 .gears .card-banner img {
-  width: 45%;
+  width: 100%;
   margin-inline: auto;
+}
+
+.img-full-gaming-set {
+  width: 20vw;
+
 }
 
 .share,
@@ -1130,26 +1135,26 @@ body.active {
    * responsive larger than px
    */
 
-   @media (min-width: 420px) {
-    /**
+@media (min-width: 420px) {
+  /**
        * CUSTOM PROPERTY
        */
-  
-    :root {
-      /**
+
+  :root {
+    /**
          * typography
          */
-  
-      --fs-1: 70px;
-    }
-  
-  
-    .container .card .content img {
-      width: 100%;
-      border-radius: 4px;
-      box-shadow: 0 2px 4px hsla(0, 0%, 0%, 0.2);
-    }
+
+    --fs-1: 70px;
   }
+
+
+  .container .card .content img {
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px hsla(0, 0%, 0%, 0.2);
+  }
+}
 
 
 /*-----------------------------------*\
@@ -1962,6 +1967,7 @@ body.active {
     font-weight: 500;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   }
+
   .container .card .content img {
     width: 100%;
     border-radius: 4px;
