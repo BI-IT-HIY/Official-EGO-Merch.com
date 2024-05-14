@@ -2182,14 +2182,14 @@ body.active {
   
   .container .card .content h3 {
     font-size: 1.8em;
-    color: #fff;
+    color: #ff8800;
     z-index: 1;
   }
   
   .container .card .content p {
     font-size: 1em;
-    color: #fff;
-    font-weight: 300;
+    color: #ff8800;
+    font-weight: 750;
   }
   
   .container .card .content a {
