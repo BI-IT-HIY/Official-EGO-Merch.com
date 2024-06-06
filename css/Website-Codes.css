@@ -803,7 +803,7 @@ body.active {
 
 .card-time-wrapper {
   top: 2%;
-  right: 5%;
+  right: 4%;
   font-family: var(--ff-oswald);
   font-size: var(--fs-9);
   font-weight: var(--fw-500);
@@ -1148,6 +1148,13 @@ body.active {
     --fs-1: 70px;
   }
 
+  .card-time-wrapper {
+    right: -14.2%;
+  }
+
+  .share {
+    right: -15%;
+  }
 
   .container .card .content img {
     width: 100%;
@@ -1176,8 +1183,8 @@ body.active {
        */
 
     --fs-1: 70px;
-  }
 
+  }
 
   .container .card .content img {
     width: 100%;
